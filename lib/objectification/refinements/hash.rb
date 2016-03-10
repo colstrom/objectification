@@ -5,3 +5,13 @@ module Hash_hmap
     end
   end
 end
+
+module Hash_types
+  refine Hash do
+    using Hash_hmap
+
+    def types
+      self.hmap { |k, v| [k, v.class.name] }
+    end
+  end
+end
