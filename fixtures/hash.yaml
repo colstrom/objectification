@@ -1,0 +1,7 @@
+---
+a_hash:
+  inner_string: inner
+a_string: outer
+an_array:
+  - value-a
+  - value-b
