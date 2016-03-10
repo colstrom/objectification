@@ -1,0 +1,28 @@
+#+TITLE: Objectification
+#+SUBTITLE: Arbitrary Objects from Hashes
+
+* Installation
+
+#+BEGIN_SRC shell
+  gem install objectification
+#+END_SRC
+
+* Usage
+
+#+BEGIN_SRC ruby
+  require 'objectification'
+
+  some_hash = { 'foo' => 'bar' }
+  some_object = Objectification::FromHash.new some_hash
+  some_object.foo # => 'bar'
+#+END_SRC
+
+* License
+
+[[https://tldrlegal.com/license/mit-license][MIT License]]
+
+ See ~LICENSE.txt~ for the full text.
+
+* Contributors
+
+- [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
